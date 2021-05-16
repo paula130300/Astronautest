@@ -1,0 +1,359 @@
+
+
+html,body {margin:0;padding:0} 
+
+
+
+
+#header { /* header de base*/
+    
+	height: 30%;
+    /*Reset CSS*/
+
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	
+
+	background-color: #046adf;
+	}
+	
+#header > h1 {  /*syle du titre du site*/
+    
+	height: 30%;
+	text-align: center;
+
+	background-color: #046adf;
+
+}
+
+#user{
+	float: right;
+	margin-right: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+    width: 150px;
+}
+
+#user > img {
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+#user > p {
+    margin-top: 15px;
+}
+
+
+#header  p{
+    
+	float: right;
+	height: 20%;
+	width: auto;
+	position: relative;
+	
+}
+
+#header p a{
+	color: black;
+	font-size: 12pt;
+}
+
+
+#logo :hover{
+   background-color: #df043b;
+    box-shadow: #5c84b1;
+	cursor: pointer;
+}
+
+
+/* ================ Barre de recherche===================*/
+#barre {
+	margin-top: 5px;
+	text-align: center;
+	width: 100;
+	
+	position: relative;
+	
+}
+#barre input {
+	outline: none;
+	}
+
+#barre > button {
+	border: none;
+	outline: none;
+}
+#barre > button:hover{
+
+ 	background-color: gray;
+ 	
+ 	border: none;
+  	color: transparent;
+	outline: 0;
+  
+}
+
+
+
+
+
+
+/* menu déroulant */
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.nav_sous{
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+nav > ul li:hover .nav_sous{
+	display: block;
+}
+.nav_sous li{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.nav_sous a{
+	
+	padding: 10px;
+	border-bottom: none;
+}
+
+.nav_sous a:hover{
+	border-bottom: none;
+	background-color: rgba(200,200,200,0.1);
+}
+
+.nav_deroulant >a{
+	font-size: 14pt;
+
+}
+
+.nav_deroulant >a::after{
+	content: "▼";
+	font-size: 12px;
+
+}
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background-color: grey;
+	position: sticky;
+	top:0px;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+nav a:hover{
+	color: blue;
+	border-bottom: 2px solid gold;
+}
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	float:left;
+	width: 16%;
+	text-align: center;
+	position: relative;
+}
+
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+	
+ /*fin menu déroulant */
+ 
+#center { 
+	display: flex;
+	flex-direction: column;
+} 
+
+#contenu_float { 
+	
+	float:left; 
+	width:100%; 
+	height: 100%;
+	
+
+} 
+
+
+#bouton_centre{ 
+	margin: 0px 300px;
+	height:64%;
+	
+	background-image:url(../ressources/bat_isep.jpg);
+	background-size: cover;
+	padding: 200px 0px;
+	text-align:center;
+	
+	
+}
+#bouton_centre button{
+	width: 200px;
+	height: 100px;
+	background-color: rgb(6, 9, 179);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+	border: transparent;
+	padding: 10px 0px;
+	color:white;
+	outline: 0;
+	font-size: 14pt;
+	border-radius: 10px;
+	
+	
+	
+	
+
+}
+
+
+#bouton_centre button:hover{
+	 background-color: rgb(0, 162, 255);
+	 border: transparent;
+	 cursor: pointer;
+
+
+}
+
+#bouton_centre button:active{
+	background-color: rgb(255, 0, 0);
+	
+
+
+}
+#contenu_2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#Classements {
+	float: left;
+	margin-left:300px;
+	
+	width: 30%;
+	height: 400px;
+	background-color: rgba(21, 33, 202);
+	
+	
+	
+	
+	
+}
+
+#Classements h2{
+	
+	text-align: center;
+	color: black;
+	
+}
+#Classements ul {
+	list-style:  none;
+	color: black;
+}
+
+#Classements ul li {
+	margin-right: 20%;
+	border-top: 2px solid black;
+
+	padding: 10px;
+	
+	
+	
+
+}
+
+#Classements ul li a{
+	text-decoration: none;
+	color: black;
+	
+	
+
+}
+
+#actus {
+	float: right;
+	margin-right:300px;
+	width: 30%;
+	height: 400px;
+	background-color: #d30c16;
+	
+	
+	
+	
+}
+#actus h2 {
+	text-align: center;
+	color: black;
+}
+
+#actus ul {
+	list-style:  none;
+	color: black;
+	
+}
+
+#actus ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 100px;
+	
+}
+
+
+
+
+
+#footer { 
+	float: left;
+	margin-top: 0px;
+	width:100%;
+	height: 150px;
+	background-color:#0e71e2;
+	
+} 
+
+#text_left {
+	float: left;
+	margin: 50px;
+	position: relative;
+
+
+}
+#text_right {
+	float: right;
+	margin: 100px;
+	text-align: right;
+	position: relative;
+	
+}
